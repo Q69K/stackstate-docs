@@ -82,6 +82,7 @@
   * [Wildcard search in Logz.io](use/wildcard_search.md)
   * [Splunk saved search](use/splunk_saved_search.md)
   * [Alerting](use/alerting.md)
+  * [AAD Beta](use/AAD)
 * [Configure](configure/README.md)
   * [Topology synchronization](configure/topology_synchronization.md)
   * [Configuring synchronizations](configure/sync.md)
