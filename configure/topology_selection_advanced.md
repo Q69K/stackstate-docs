@@ -8,7 +8,7 @@ listorder: 2
 
 # Advanced topology queries with STQL
 
-The full topology available in StackState most likely includes much more detail than you will require at any given time. As well as a providing a number of basic filters, StackState allows you to create your own advanced topology filters to locate a specific part of the topology you are interested in.
+The full topology available in StackState most likely includes much more detail than you will require at any given time. As well as a providing a number of basic filters, StackState allows you to create your own advanced topology filters to zoom in and locate the specific part of the topology you are interested in.
 
 Advanced topology selection gives you full control over the topology displayed. You can access the Advanced Filter screen by clicking _Advanced_ on the basic filter panel. Filters entered in the advanced filter bar should be written using the in-built StackState Query Language (STQL).
 
