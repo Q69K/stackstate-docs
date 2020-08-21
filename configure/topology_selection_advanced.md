@@ -59,21 +59,17 @@ layer = "application"
 name in ("appA","appB") NOT label = "bck"
 ```
 
-## STQL functions
-
-STQL functions expand query results with related components.
-
-### withNeighborsOf
+## Function: withNeighborsOf
 
 The function **withNeighborsOf** extends STQL query output, adding connected components in the specified direction\(s\). The number of topology levels included can be adjusted up to a maximum of 15.
 
-#### Usage
+### Usage
 
 ```text
 withNeighborsOf(components=(), levels=, direction-)
 ```
 
-#### Paramaeters
+### Paramaeters
 
 | Filter | Default | Allowed values | Description |
 | :--- | :--- | :--- | :--- |
@@ -81,7 +77,7 @@ withNeighborsOf(components=(), levels=, direction-)
 | `levels` | 1 | all, \[1:14\] | The number of levels to include in the output. Use **all** to display all available levels \(maximum 15\) |
 | `direction` | both | up, down, both | **up -** only components that depend on the named component\(s\) will be added <br>**down -** only dependencies of the named component\(s\) will be added <br>**both -** components that depend on and dependencies of the named component\(s\) will be added. |
 
-#### Examples
+### Examples
 
 ```
 # Select all components in the application layer that have
@@ -93,6 +89,6 @@ layer = "application"
   OR withNeighborsOf(components = (name in ("appA","appB")))
 ```
 
-### withCauseOf `DEPRECATED`
+## Function: withCauseOf `DEPRECATED`
 
 This functionality is deprecated. It has been replaced by the **Root Cause Analysis** section in the visulaizer. The construct will be parsed, but will not produce any additional components.
