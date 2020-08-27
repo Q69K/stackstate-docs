@@ -28,7 +28,7 @@ The filters described below can be combined using boolean operators to achieve c
 | `name` | all | ... | ... |
 | `type` | all | ... | ... |
 
-**Examples**
+### Examples
 
 ```text
 # Select all components with name "serviceB"
