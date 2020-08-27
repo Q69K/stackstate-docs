@@ -2,7 +2,7 @@
 
 The built-in StackState Query Language \(STQL\) can be used to run advanced queries in the StackState Topology perspective and Analytics environments.
 
-* **Topology:** Use STQL to build [advanced topology filters](/use/perspectives/topology-perspective) that zoom in on specific areas of your topology or highlight components and their root cause.
+* **Topology:** Use STQL to build [advanced topology filters](/use/perspectives/topology-perspective/) that zoom in on specific areas of your topology or highlight components and their root cause.
 * **Analytics:** Combine STQL with [scripting](/develop/scripting/) to create powerful queries that access the entire 4T data model.
 
 STQL queries consist of component filters and STQL functions. The query output is a component, or set of components, from the complete topology.
@@ -55,7 +55,7 @@ withNeighborsOf(components=(), levels=, direction-)
 
 | Filter | Default | Allowed values | Description |
 | :--- | :--- | :--- | :--- |
-| `components` | all | \(componentFilter\) | The component\(s\) for which the neighbors will be returned, see [Component filters](https://github.com/StackVista/stackstate-docs/tree/90694e980c450326d66244f92ac2d6c235eb6b68/configure/test_ref.md). |
+| `components` | all | \(componentFilter\) | The component\(s\) for which the neighbors will be returned, see [Component filters](/reference/stql-reference#component-filters). |
 | `levels` | 1 | all, \[1:14\] | The number of levels to include in the output. Use **all** to display all available levels \(maximum 15\) |
 | `direction` | both | up, down, both | **up -** only components that depend on the named component\(s\) will be added  **down -** only dependencies of the named component\(s\) will be added  **both -** components that depend on and dependencies of the named component\(s\) will be added. |
 
