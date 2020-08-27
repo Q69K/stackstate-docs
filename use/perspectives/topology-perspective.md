@@ -55,6 +55,12 @@ The same topology selection can also be shown in list format:
 
 ![Filtering\(list\)](../../.gitbook/assets/basic_filtering_list.png)
 
+### Using advanced filtering
+
+You can use the built in [StackState Query Language \(STQL\)](/reference/stql-reference/) to write advanced topology filters that zoom in on a specific area of your topology or highlight problem components and identify their root cause.
+
+To search the topology using an STQL query, click **Advanced** at the top of the filter panel. For details on how to write your own queries, see the [STQL reference](/reference/stql-reference/).
+
 ## Interactive navigation
 
 It is also possible to interactively navigate the topology. Right-click on a component to bring up the component navigation menu:
@@ -97,11 +103,10 @@ If there are components with [telemetry streams](../../configure/checks_and_stre
 
 The Topology Perspective allows you to configure whether to show the root cause if it is outside of your view:
 
-* **Don't show root cause** -- do not show the root cause 
+* **Don't show root cause** -- do not show the root cause
 * **Show root cause only** -- only show the root cause component
 * **Show full root cause tree** -- show the entire root cause tree
 
 ## List mode
 
 The components in the view can also be shown in a list instead of a graph.
-

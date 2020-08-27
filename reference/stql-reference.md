@@ -2,7 +2,7 @@
 
 The built-in StackState Query Language \(STQL\) can be used to run advanced queries in the StackState Topology perspective and Analytics environments.
 
-* **Topology:** Use STQL to build [advanced topology filters](/use/perspectives/topology-perspective.md) that zoom in on a specific area of your topology or highlight problem components and their root cause.
+* **Topology:** Use STQL to build [advanced topology filters](/use/perspectives/topology-perspective#filtering) that zoom in on a specific area of your topology or highlight problem components and their root cause.
 * **Analytics:** Combine STQL with [scripting](/develop/scripting/) to create powerful queries that access the entire 4T data model.
 
 STQL queries consist of component filters and STQL functions. The query output is a component, or set of components, from the complete topology.
