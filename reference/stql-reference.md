@@ -18,15 +18,15 @@ The filters described below can be combined using boolean operators to achieve c
 
 ### Filters
 
-| Filter | Default | Allowed values | Description |
-| :--- | :--- | :--- | :--- |
-| `domain` | all | ... | ... |
-| `environment` | all | ... | ... |
-| `healthstate` | all | DEVIATING, CRITICAL | Components with the named healthstate |
-| `label` | all | ... | Components with the named labels |
-| `layer` | all | ... | Components in the named layer |
-| `name` | all | ... | ... |
-| `type` | all | ... | ... |
+| Filter | Default | Description |
+| :--- | :--- | :--- |
+| `domain` | all | Components in the specified domain(s) |
+| `environment` | all | Components in the named environment |
+| `healthstate` | all | Components with the named healthstate |
+| `label` | all | Components with the named labels |
+| `layer` | all | Components in the named layer |
+| `name` | all | Components with the specified name |
+| `type` | all | Components of the specified type |
 
 ### Examples
 
@@ -39,6 +39,18 @@ layer = "application"
 
 # Select all components named either "appA" or "appB" that do not have a label "bck"
 name in ("appA","appB") NOT label = "bck"
+
+# Select all components named "appA" that do not have a label "bck" or "test"
+name = "appA" NOT label in ("bck", "test")
+```
+
+### Wildcard
+
+It is not possible to filter for partial matches using a wildcard character. You can, however, use `*` as a full wildcard. This is helpful to build a basic select all query.
+
+```
+# select all components
+name = "*"
 ```
 
 ## Function: withNeighborsOf
