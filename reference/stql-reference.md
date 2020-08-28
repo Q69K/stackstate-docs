@@ -60,7 +60,7 @@ The function **withNeighborsOf** extends STQL query output, adding connected com
 ### Usage
 
 ```text
-withNeighborsOf(components=(), levels=, direction-)
+withNeighborsOf(components=(), levels=, direction=)
 ```
 
 ### Paramaeters
