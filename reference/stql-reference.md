@@ -44,12 +44,12 @@ name in ("appA","appB") NOT label = "bck"
 name = "appA" NOT label in ("bck", "test")
 ```
 
-### Wildcard
+### Filter with wildcard
 
 It is not possible to filter for partial matches using a wildcard character. You can, however, use `*` as a full wildcard. This is helpful to build a basic select all query.
 
 ```
-# select all components
+# Select all components
 name = "*"
 ```
 
